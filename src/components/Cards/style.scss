@@ -1,0 +1,66 @@
+@import "../../common/variables";
+
+.hero-card-wrapper {
+    color: $white-color;
+    background-color: $background-gray-color;
+    max-width: 200px;
+    padding: 16px 32px;
+    text-align: justify;
+
+    .hero-card-weather {
+        row-gap: 12px;
+
+        &__image {
+            max-width: 150px;
+            max-height: 150px;
+        }
+
+        &__description {
+            text-transform: capitalize;
+        }
+
+        &__temperature {
+            font-size: 36px;
+            font-weight: 500;
+        }
+    }
+
+    .hero-card-location {
+        &>p {
+            margin: 0;
+        }
+
+        row-gap: 12px;
+    }
+}
+
+
+.mini-card-wrapper {
+    background-color: $background-gray-color;
+    color: $white-color;
+    gap: 16px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    height: fit-content;
+    width: fit-content;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .mini-card-image {
+        max-height: 20px;
+        align-self: center;
+    }
+
+    .property-info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &__name {
+            text-transform: capitalize;
+        }
+    }
+}

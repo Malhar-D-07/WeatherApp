@@ -1,0 +1,17 @@
+@import "./variables";
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.divider {
+    margin: 16px 0;
+    outline: none;
+    border: 1px solid $white-color;
+}

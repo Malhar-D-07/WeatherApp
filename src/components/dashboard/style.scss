@@ -1,0 +1,65 @@
+@import '../../common/variables';
+
+body {
+    height: 100vh;
+    background-color: $background-black-color;
+}
+
+.app-wrapper {
+    padding: 8px;
+    background-color: $background-black-color;
+}
+
+.all-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    padding: 40px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
+}
+
+.card-wrapper {
+    border-radius: 4px;
+    margin: 4px 8px;
+    width: fit-content;
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+        margin: auto;
+    }
+}
+
+.mini-cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.loader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $background-black-color;
+    opacity: 0.8;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.loader {
+    color: white;
+}

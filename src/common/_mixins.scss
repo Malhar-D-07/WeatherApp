@@ -1,0 +1,8 @@
+@import "_variables.scss";
+
+@mixin font-properties($size, $weight, $color) {
+    font-weight: $weight;
+    font-family: $app-font;
+    color: $color;
+    font-size: $size;
+}
