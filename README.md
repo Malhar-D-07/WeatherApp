@@ -5,4 +5,4 @@
 - If the user revisits the app, the local storage remembers the last searched city and its weather information and displays it.
 - Include error handling for scenarios like invalid city names or API failures.
 
-- The app is hosted on [Vercel](https://weather-dashboard-7s7a382gp-malhar-ds-projects.vercel.app/)
+- The app is hosted on [Vercel](https://weather-dashboard-steel.vercel.app/)
